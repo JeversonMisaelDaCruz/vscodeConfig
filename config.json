@@ -4,7 +4,6 @@
   "editor.lineHeight": 1.8,
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
- 
   "extensions.ignoreRecommendations": true,
   "typescript.tsserver.log": "off",
   "workbench.tree.enableStickyScroll": false,
@@ -49,7 +48,7 @@
     "FIG_NEW_SESSION": "1"
   },
   "workbench.editor.labelFormat": "short",
-   "editor.fontLigatures": true,
+  "editor.fontLigatures": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
@@ -107,7 +106,6 @@
     "**\/.svn": true,
     "**\/.git": true,
     ".vscode": true
-  
   },
   "workbench.iconTheme": "symbols",
   "update.mode": "default",
@@ -201,20 +199,15 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.statusBar.visible": false,
-  "window.menuBarVisibility": "toggle",
-  "editor.renderControlCharacters": false,
-  "editor.stickyScroll.enabled": false,
-  "workbench.activityBar.location": "hidden",
-  "editor.cursorBlinking": "phase",
-  "editor.cursorWidth": 4,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "workbench.activityBar.visible": false,
+  "editor.minimap.enabled": false,
+  "editor.parameterHints.enabled": false,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
   },
-  "prettier.bracketSameLine": true,
-  "prettier.documentSelectors": [
-    "html"
-  ],
+  "editor.scrollbar.vertical": "hidden",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -230,5 +223,4 @@
   },
   "oracledevtools.bookmarkFileFolder": "/home/misael/Oracle/oracle.oracledevtools",
   "oracledevtools.download.otherFolder": "/home/misael/downloads"
-
 }

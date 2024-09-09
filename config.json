@@ -4,9 +4,7 @@
   "editor.lineHeight": 1.8,
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.rulers": [
-    140
-  ],
+ 
   "extensions.ignoreRecommendations": true,
   "typescript.tsserver.log": "off",
   "workbench.tree.enableStickyScroll": false,
@@ -41,7 +39,6 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.suggestSelection": "first",
   "explorer.confirmDelete": false,
-  "gitlens.codeLens.recentChange.enabled": false,
   "terminal.integrated.showExitAlert": false,
   "[prisma]": {
     "editor.formatOnSave": true
@@ -95,10 +92,10 @@
     "typescript",
     "typescriptreact",
     "json",
-    "jsonc"
+    "jsonc",
+    "java"
   ],
   "editor.semanticHighlighting.enabled": false,
-  "workbench.productIconTheme": "fluent-icons",
   "editor.fontFamily": "JetBrains Mono",
   "gitlens.codeLens.authors.enabled": false,
   "editor.tabSize": 2,
@@ -143,7 +140,7 @@
   "editor.minimap.enabled": false,
   "window.titleBarStyle": "native",
   "apc.electron": {
-    "titleBarStyle": "hiddenInset",
+    "titleBarStyle": "hidden",
     "trafficLightPosition": {
       "x": 11,
       "y": 10
@@ -220,6 +217,18 @@
   ],
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "oracledevtools.connectionConfiguration.configFilesFolder": "/home/misael/Oracle/network/admin",
+  "oracledevtools.connectionConfiguration.walletFileFolder": "/home/misael/Oracle/network/admin",
+  "[oraclesql]": {
+    "editor.suggest.showSnippets": true,
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+  "oracledevtools.bookmarkFileFolder": "/home/misael/Oracle/oracle.oracledevtools",
+  "oracledevtools.download.otherFolder": "/home/misael/downloads"
 
 }

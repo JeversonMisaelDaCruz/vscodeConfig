@@ -172,6 +172,9 @@
     ".env.local": ".env*",
     ".env": ".env*"
   },
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorWidth": 4,
   "explorer.fileNesting.enabled": true,
   "editor.tokenColorCustomizations": {
     "textMateRules": []

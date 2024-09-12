@@ -35,14 +35,12 @@
   "editor.parameterHints.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "cSpell.language": "en,pt",
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.suggestSelection": "first",
   "explorer.confirmDelete": false,
   "terminal.integrated.showExitAlert": false,
   "[prisma]": {
     "editor.formatOnSave": true
   },
-  "typescript.suggest.autoImports": true,
   "typescript.preferences.preferTypeOnlyAutoImports": true,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
@@ -110,7 +108,6 @@
   "workbench.iconTheme": "symbols",
   "update.mode": "default",
   "terminal.integrated.gpuAcceleration": "on",
-  "terminal.integrated.defaultProfile.osx": "fish",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -203,14 +200,11 @@
   },
   "workbench.statusBar.visible": false,
   "workbench.activityBar.visible": false,
-  "editor.minimap.enabled": false,
-  "editor.parameterHints.enabled": false,
   "editor.quickSuggestions": {
     "other": false,
     "comments": false,
     "strings": false
   },
-  "editor.scrollbar.vertical": "hidden",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

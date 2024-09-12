@@ -13,6 +13,8 @@
     "*.css": "css",
     ".dev.vars": "dotenv"
   },
+  "breadcrumbs.enabled": false,
+  "typescript.tsdk": "/usr/local/lib/node_modules/typescript/lib",
   "symbols.files.associations": {
     "*.module.ts": "nest",
     "*.guard.ts": "typescript",
@@ -183,7 +185,7 @@
     "prisma": true
   },
   "discord.token": "",
-  "workbench.colorTheme": "Miraculous Theme",
+  "workbench.colorTheme": "Rosé Pine",
   "terminal.integrated.env.windows": {},
   "workbench.sideBar.location": "right",
   "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",

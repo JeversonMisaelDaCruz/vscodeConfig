@@ -4,40 +4,38 @@
   "editor.lineHeight": 1.8,
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "extensions.ignoreRecommendations": true,
-  "typescript.tsserver.log": "verbose",
+  "extensions.ignoreRecommendations": false,
+  "typescript.tsserver.log": "off",
   "workbench.tree.enableStickyScroll": false,
   "files.associations": {
     ".env.*": "dotenv",
     ".prettierrc": "json",
     "*.css": "css",
-    ".dev.vars": "dotenv"
+    ".dev.vars": "dotenv",
+    "*.vue": "vue"
   },
   "typescript.tsdk": "/usr/local/lib/node_modules/typescript/lib",
-  "tailwindCSS.experimental.classRegex": [
-    [
-      "tv\\(([^)]*)\\)",
-      "[\"'`]([^\"'`]*).*?[\"'`]"
-    ],
-    "class:\\s*?[\"'`]([^\"'`]*).*?,"
-  ],
-  "editor.parameterHints.enabled": false,
+  "editor.parameterHints.enabled": true,
   "editor.renderLineHighlight": "gutter",
   "editor.suggestSelection": "first",
   "explorer.confirmDelete": false,
   "terminal.integrated.showExitAlert": false,
   "[prisma]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Prisma.prisma"
   },
   "typescript.preferences.preferTypeOnlyAutoImports": true,
   "terminal.integrated.env.osx": {},
   "workbench.editor.labelFormat": "short",
   "editor.fontLigatures": true,
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "vue": "html"
   },
   "emmet.syntaxProfiles": {
-    "javascript": "jsx"
+    "javascript": "jsx",
+    "vue-html": "html"
   },
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.compactFolders": false,
@@ -49,14 +47,15 @@
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    "graphql",
     "typescript",
     "typescriptreact",
+    "vue",
+    "graphql",
     "json",
     "jsonc",
     "java"
   ],
-  "editor.semanticHighlighting.enabled": false,
+  "editor.semanticHighlighting.enabled": true,
   "editor.fontFamily": "JetBrains Mono",
   "gitlens.codeLens.authors.enabled": false,
   "editor.tabSize": 2,
@@ -66,7 +65,8 @@
     "**/.hg": true,
     "**/.svn": true,
     "**/.git": true,
-    ".vscode": true
+    ".vscode": true,
+    "node_modules": true
   },
   "update.mode": "default",
   "terminal.integrated.gpuAcceleration": "on",
@@ -95,7 +95,7 @@
   },
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorWidth": 4,
+  "editor.cursorWidth": 2,
   "explorer.fileNesting.enabled": true,
   "editor.tokenColorCustomizations": {
     "textMateRules": []
@@ -120,16 +120,18 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.quickSuggestions": {
-    "other": false,
+    "other": true,
     "comments": false,
     "strings": false
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
   "workbench.iconTheme": "vscode-icons",
   "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Vim Dark Soft",
   "git.autofetch": true,
   "files.trimTrailingWhitespace": true,
   "editor.formatOnSave": true,
@@ -139,5 +141,6 @@
     "source.fixAll": true
   },
   "files.eol": "\n",
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.colorTheme": "Vim Dark Soft"
 }

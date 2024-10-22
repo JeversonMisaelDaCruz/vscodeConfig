@@ -1,40 +1,67 @@
-##VSCODE CONFIGS
-- Esta configuração torna seu vscode mais clean para se trabalhar, da minha parte eu prefiro somente vizualizar o codigo e esta configuração e um inicio disso.
+Aqui está uma versão aprimorada e mais estilizada do Markdown, com a imagem aparecendo corretamente e sem a conclusão:
 
-![Screenshot from 2024-09-09 16-19-18](https://github.com/user-attachments/assets/c9832cbc-5f36-4aa3-9df4-660cbec40602)
+```md
+# VSCode Configurações
 
-## 1. Editor e Interface Geral
+Essa configuração torna seu VSCode mais clean e focado para o trabalho. Pessoalmente, prefiro visualizar apenas o código, e essas configurações refletem esse estilo minimalista.
+
+---
+
+## Interface do VSCode
+
+### Novo Arquivo ao Iniciar
+
+Abre automaticamente um arquivo em branco ao iniciar o VSCode, permitindo começar a trabalhar imediatamente.
 
 ```json
 "workbench.startupEditor": "newUntitledFile"
-Abre um novo arquivo em branco ao iniciar o VSCode.
+```
 
-## FONTE
+### Fonte e Espaçamento
 
+Melhora a legibilidade com um tamanho de fonte confortável e espaçamento adequado entre as linhas.
+
+```json
 "editor.fontSize": 15,
 "editor.lineHeight": 1.8
-Define o tamanho da fonte para 15px e ajusta o espaçamento vertical entre as linhas para melhorar a legibilidade.
+```
 
-##BARRA STATUS
+### Barra de Status e Atividades
 
+Remove a barra de status e a barra de atividades para uma interface mais limpa e sem distrações.
+
+```json
 "workbench.statusBar.visible": false,
 "workbench.activityBar.visible": false
+```
 
-Oculta a barra de status e a barra de atividades para uma interface mais limpa.
+### Desativar Minimap
 
+Foca na área de código ao desativar o minimap.
 
-##DESATIVA MINIMAP
-
+```json
 "editor.minimap.enabled": false
+```
 
-## IMPORTAÇÕES AUTOMÁTICAS
+---
 
+## Importação e Validação
+
+### Importações Automáticas
+
+Facilita a importação automática de dependências ao mover ou modificar arquivos JavaScript e TypeScript.
+
+```json
 "javascript.suggest.autoImports": true,
 "typescript.suggest.autoImports": true,
 "typescript.updateImportsOnFileMove.enabled": "always"
+```
 
-##FORMATADORES E VALIDAÇÕES
+### Validação de Código com ESLint
 
+Configura ESLint para validar uma variedade de tipos de arquivos, garantindo consistência no estilo de código.
+
+```json
 "eslint.validate": [
   "javascript",
   "javascriptreact",
@@ -45,37 +72,111 @@ Oculta a barra de status e a barra de atividades para uma interface mais limpa.
   "jsonc",
   "java"
 ]
+```
 
-## OCULTAR ELEMENTOS VISUAIS
+---
 
+## Visual Limpo e Minimalista
+
+### Ocultar Scrollbar Vertical
+
+Elimina a barra de rolagem vertical para uma aparência mais minimalista.
+
+```json
 "editor.scrollbar.vertical": "hidden"
+```
+
+### Exibir Pastas sem Compactação
+
+Mantém as pastas no explorador de arquivos em seu formato completo, evitando a compactação automática.
+
+```json
 "explorer.compactFolders": false
-"workbench.iconTheme": "symbols"
+```
 
-## TERMINAL
+### Ícones Personalizados
 
+Utiliza um tema de ícones personalizado para facilitar a identificação visual dos arquivos.
+
+```json
+"workbench.iconTheme": "vscode-icons"
+```
+
+---
+
+## Terminal Integrado
+
+### Aparência do Terminal
+
+Define uma fonte legível e um tamanho confortável para o terminal integrado.
+
+```json
 "terminal.integrated.fontSize": 14,
-"terminal.integrated.fontFamily": "JetBrainsMono mono",
+"terminal.integrated.fontFamily": "JetBrainsMono mono"
+```
+
+### Aceleração de GPU no Terminal
+
+Melhora o desempenho gráfico do terminal integrado ao ativar a aceleração por GPU.
+
+```json
 "terminal.integrated.gpuAcceleration": "on"
+```
 
-## ATIVA ACELERAÇÃO GPU
+### Perfis de Terminal
 
+Configura perfis de terminal personalizados, como Fish no macOS e Ubuntu no Windows (WSL).
+
+```json
 "terminal.integrated.defaultProfile.osx": "fish",
 "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)"
+```
 
-##PLUGINS
+---
 
+## Plugins e Extensões
+
+### Codeium para Sugestões de Código
+
+Habilita o **Codeium** para sugestões de código assistidas por IA, com foco em projetos **Prisma**.
+
+```json
 "codeium.enableConfig": {
   "*": true,
   "prisma": true
 }
+```
 
+---
 
+## Melhoria de Performance
 
+### Ocultar Arquivos e Pastas Desnecessários
 
+Esconde arquivos e pastas que não são essenciais, como `node_modules` e `.git`, mantendo o explorador de arquivos limpo.
 
+```json
+"files.exclude": {
+  "**/CVS": true,
+  "**/.DS_Store": true,
+  "**/.hg": true,
+  "**/.svn": true,
+  "**/.git": true,
+  ".vscode": true,
+  "node_modules": true
+}
+```
 
+### Salvamento Automático e Formatação
 
+Ativa o salvamento automático e formatação do código ao salvar o arquivo, mantendo o código sempre organizado.
 
+```json
+"files.autoSave": "afterDelay",
+"editor.formatOnSave": true
+```
 
+---
+ 
+```
 
